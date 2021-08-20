@@ -1,0 +1,19 @@
+{
+  "name": "trivia15dias",
+  "version": "1.0.0",
+  "description": "trivia game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanisJam/trivia15dias.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanisJam/trivia15dias/issues"
+  },
+  "homepage": "https://github.com/TanisJam/trivia15dias#readme"
+}
