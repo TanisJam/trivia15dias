@@ -25,16 +25,16 @@ Ademas se propuso implementar un sistema de pistas mediante imágenes obtenidas 
 ### Tareas a completar
 
 - [x] Generar estructura básica del proyecto con las paginas index, game y about.
-- [ ] Seleccionar un diseño general y consistente.
-- [ ] Implementar un sistema de navegación para el sitio.
+- [x] Seleccionar un diseño general y consistente.
+- [x] Implementar un sistema de navegación para el sitio.
 - [ ] Completar sección principal:
-    - [ ] Diseño del menú del juego.
+    - [x] Diseño del menú del juego.
     - [ ] Implementar la carga de datos del jugador.
     - [ ] Almacenar los datos recibidos en local storage.
     - [ ] Permitir al usuario la modificación de los datos. 
     - [ ] Permitir la selección de opciones para el juego.
 - [ ] Completar sección del juego:
-    - [ ] Diseño de la interfaz del juego.
+    - [x] Diseño de la interfaz del juego.
     - [ ] Solicitar y almacenar datos de Open Trivia Database.
     - [ ] Tomar la pregunta normalizada y enviarla a Libre Translate y almacenar su respuesta.
     - [ ] Realizar una petición de imágenes a Unsplash utilizando como palabra clave la respuesta correcta.

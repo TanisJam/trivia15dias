@@ -19,7 +19,46 @@
 </head>
 
 <body>
-    <h1>Trivia</h1>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <!-- <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top"> -->
+                Trivia
+            </a>
+            <a class="nav-link active" aria-current="home" href="./about/about.html">Nosotros</a>
+        </div>
+    </nav>
+    <div class="mt-4 container">
+        <header>
+            <h1>Trivia</h1>
+            <p>Tu juego de confianza</p>
+        </header>
+
+        <section id="opciones">
+            <h3>Opciones:</h3>
+            <form action="" class="d-flex flex-column">
+                <label for="form-name">Nombre</label>
+                <input name="form-name" type="text" placeholder="Tu nombre">
+                <label for="form-dificulty" class="mt-2">Dificultad</label>
+                <select name="form-dificulty">
+                    <option value="1">Muy Facil</option> 
+                    <option value="2">Facil</option> 
+                    <option value="3">Intermedio</option>
+                    <option value="4">Dificil</option> 
+                    <option value="5">Muy Dificil</option> 
+                    <option value="6">Imposible</option> 
+                 </select>
+                 <!-- <input type="button" value="Jugar" class="mt-2 btn btn-primary"> -->
+                 <a href="/game/game.html" class="mt-2 btn btn-primary"> Jugar </a>
+
+
+            </form>
+
+        </section>
+
+        
+    </div>
 </body>
 
 </html>
