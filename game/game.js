@@ -9,7 +9,7 @@ $('#button').click(e => {
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "contextualwebsearch-websearch-v1.p.rapidapi.com",
-			"x-rapidapi-key": "aba0c61be2msh82ac72ad6257ab5p118564jsn8b81b15e4344"
+			"x-rapidapi-key": ""
 		}
 	};
 	$.ajax(settings).done(function (response) {
