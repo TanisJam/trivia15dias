@@ -20,7 +20,7 @@
 
 <body>
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="/">
                 <!-- <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
                     class="d-inline-block align-text-top"> -->
@@ -29,35 +29,46 @@
             <a class="nav-link active" aria-current="home" href="./about/about.html">Nosotros</a>
         </div>
     </nav>
-    <div class="mt-4 container">
+    <div class="mt-4 container text-center">
         <header>
             <h1>Trivia</h1>
             <p>Tu juego de confianza</p>
         </header>
 
         <section id="opciones">
-            <h3>Opciones:</h3>
-            <form action="" class="d-flex flex-column">
-                <label for="form-name">Nombre</label>
-                <input name="form-name" type="text" placeholder="Tu nombre">
-                <label for="form-dificulty" class="mt-2">Dificultad</label>
-                <select name="form-dificulty">
-                    <option value="1">Muy Facil</option> 
-                    <option value="2">Facil</option> 
-                    <option value="3">Intermedio</option>
-                    <option value="4">Dificil</option> 
-                    <option value="5">Muy Dificil</option> 
-                    <option value="6">Imposible</option> 
-                 </select>
-                 <!-- <input type="button" value="Jugar" class="mt-2 btn btn-primary"> -->
-                 <a href="/game/game.html" class="mt-2 btn btn-primary"> Jugar </a>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <h3>Opciones:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mx-auto">
 
-
-            </form>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="form-name">Nombre</label>
+                            <input class="form-control text-center" name="form-name" type="text" id="form-name" placeholder="Pedro Perez">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-dificulty" class="mt-2">Dificultad</label>
+                            <select class="form-control text-center" name="form-dificulty" id="form-dificulty">
+                                <option value="1">Muy Facil</option>
+                                <option value="2">Facil</option>
+                                <option value="3">Intermedio</option>
+                                <option value="4">Dificil</option>
+                                <option value="5">Muy Dificil</option>
+                                <option value="6">Imposible</option>
+                            </select>
+                        </div>
+                        <!-- <input type="button" value="Jugar" class="mt-2 btn btn-primary"> -->
+                        <a href="/game/game.html" class="mt-2 btn btn-primary"> Jugar </a>
+                    </form>
+                </div>
+            </div>
 
         </section>
 
-        
+
     </div>
 </body>
 

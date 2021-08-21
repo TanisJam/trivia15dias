@@ -20,7 +20,7 @@
 
 <body>
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="/">
                 <!-- <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
                     class="d-inline-block align-text-top"> -->
@@ -32,39 +32,61 @@
     <div class="container d-flex flex-column align-items-center">
         <h1>Nosotros</h1>
         <div class="row">
-            <div class="card col-4" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+            <div class="col-md-4">
+                <div class="card my-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mariela</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
                 </div>
             </div>
-            <div class="card col-4" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+            <div class="col-md-4">
+                <div class="card my-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Brenda</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card my-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mauricio</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row mt-2">
-            <form action="" method="get" class="form-example d-flex flex-column">
-                
-                    <label for="name">Tu nombre: </label>
-                    <input type="text" name="name" id="name" required>
-                
-                    <label for="email">Tu email: </label>
-                    <input type="email" name="email" id="email" required>
-               
-                    <input type="submit" class="mt-2 btn btn-primary" value="Contactanos!">
-                
+
+            <form>
+                <div class="form-group">
+                    <label for="inputName">Tu nombre</label>
+                    <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp"
+                        placeholder="Pedro Perez">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="email@email.com">
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Contactanos</button>
             </form>
+
         </div>
     </div>
 </body>
