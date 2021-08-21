@@ -1,0 +1,65 @@
+html {
+    --sprite-size: 297px;
+}
+
+.sprite-1 {
+	background: url('./../imgs/personajes.png') no-repeat -82px -82px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-2 {
+	background: url('./../imgs/personajes.png') no-repeat -452px -82px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-3 {
+	background: url('./../imgs/personajes.png') no-repeat -821px -82px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-4 {
+	background: url('./../imgs/personajes.png') no-repeat -82px -452px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-5 {
+	background: url('./../imgs/personajes.png') no-repeat -452px -452px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-6 {
+	background: url('./../imgs/personajes.png') no-repeat -821px -452px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-7 {
+	background: url('./../imgs/personajes.png') no-repeat -82px -821px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-8 {
+	background: url('./../imgs/personajes.png') no-repeat -452px -821px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.sprite-9 {
+	background: url('./../imgs/personajes.png') no-repeat -821px -821px;
+	width: var(--sprite-size);
+	height: var(--sprite-size);
+}
+
+.scale-50 {
+    transform: scale(.5) translateY(calc(var(--sprite-size) / -2));
+}
+.pj-selector-transform {
+    transform:translateY(calc(var(--sprite-size) / -4));
+}
+

@@ -1,13 +1,6 @@
 body {
-  background-color: rgb(182, 211, 255);
+  background-color: #b6d3ff;
   min-width: 360px;
-}
-
-.icono-pregunta {
-  width: 2rem;
-  height: 2rem;
-  background-color: green;
-  border-radius: 50%;
 }
 
 .img-random {

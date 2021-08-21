@@ -1,0 +1,33 @@
+.icono-pregunta {
+    width: 32px;
+    height: 32px;
+    background-color: #00C6B9;
+    border-radius: 50%;
+    position: relative;
+  }
+  .icono-vacio {
+    width: 32px;
+    height: 32px;
+  }
+  .icono-facil {
+    width: 32px;
+    height: 32px;
+    background-color: #ADFF9E;
+    border-radius: 50%;
+    position: relative;
+  }
+  .icono-medio {
+    width: 32px;
+    height: 32px;
+    background-color: #F9F871;
+    border-radius: 50%;
+    position: relative;
+  }
+  .icono-dificil {
+    width: 32px;
+    height: 32px;
+    background-color: #91436F;
+    border-radius: 50%;
+    position: relative;
+  }
+  
