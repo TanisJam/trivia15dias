@@ -1,16 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
+import $ from 'jquery';
 
 import "./main.css";
 import "./styles/sprites.css";
+import Store from './app/Store.js';
+const store = new Store();
 
-function saveData(data) {
-  localStorage.setItem("data", JSON.stringify(data));
-}
-function getData() {
-  let data = JSON.parse(localStorage.getItem("data"));
-  return data;
-}
+import "./game/app/game"
+
 
 $("#Guardar").click((e) => {
   e.preventDefault();
@@ -23,6 +21,6 @@ $("#Guardar").click((e) => {
     avatar: avatar,
   };
   console.log('enviar:', data)
-  saveData(data);
+  store.savePlayerData(data);
   location = './game.html';
 });

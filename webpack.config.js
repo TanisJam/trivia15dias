@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     app: "./src/app.js",
   },
@@ -29,10 +29,14 @@ module.exports = {
       filename: "about.html",
       template: "./src/about/about.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "board.html",
+      template: "./src/game/board.html",
+    }),
   ],
   performance: {
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000,
+    maxEntrypointSize: 768000,
+    maxAssetSize: 768000,
   },
   devServer: {
     port: 9000,

@@ -5,60 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP CDN -->
-    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/5.0.1/css/bootstrap.min.css">
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.bundle.min.js" defer></script>
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
-
-   
-    <!-- MAIN CSS -->
-    <script src="game.js" defer></script>
 
     <title>Trivia Game</title>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="./">
-                <!-- <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
-                    class="d-inline-block align-text-top"> -->
-                Trivia
-            </a>
-            <a class="nav-link active" aria-current="home" href="./about.html">Nosotros</a>
-        </div>
-    </nav>
-
+    <!-- NABBAR -->
+    <%= require('html-loader!./../partials/nav.html').default %>
 
     <div class="container text-center">
         <div class="row">
             <div class="col-6 offset-3">
-                <h1 class="text-center">
+                <h1 id="categoria" class="text-center">
                     Entretenimiento: Musica
                 </h1>
             </div>
         </div>
         <div class="row">
             <div class="col-8 offset-2">
-                <p class="text-center"> Who is the frontman of the band 30 Seconds to Mars?</p>
+                <p id="pregunta" class="text-center"> Who is the frontman of the band 30 Seconds to Mars?</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-3">
-                <div class="btn btn-info btn-block m-1">Respuesta 1</div>
+                <div id="respuesta-1" class="btn btn-info btn-block m-1">Respuesta 1</div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="btn btn-info btn-block m-1">Respuesta 2</div>
+                <div id="respuesta-2" class="btn btn-info btn-block m-1">Respuesta 2</div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="btn btn-info btn-block m-1">Respuesta 3</div>
+                <div id="respuesta-3" class="btn btn-info btn-block m-1">Respuesta 3</div>
             </div>
             <div class="col-md-6 col-lg-3">
-                <div class="btn btn-info btn-block m-1">Respuesta 4</div>
+                <div id="respuesta-4" class="btn btn-info btn-block m-1">Respuesta 4</div>
             </div>
         </div>
         <div class="row pt-2">

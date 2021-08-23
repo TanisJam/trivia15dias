@@ -56,7 +56,12 @@ Ademas se propuso implementar un sistema de pistas mediante imágenes obtenidas 
     $ npm install
     ```
 
-2. Correr servidor de desarrollo
+2. Compilar el proyecto
     ```bash
-    $ npm run serve
+    $ npm run build
+    ```
+
+3. Opcional para correr el servidor de desarrollo
+    ```bash
+    $ npm run dev
     ```

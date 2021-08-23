@@ -19,3 +19,10 @@ select {
   text-align: center;
   text-align-last: center;
 }
+
+.icono-pregunta {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(48, 214, 123);
+  outline: 1px solid black;
+}
