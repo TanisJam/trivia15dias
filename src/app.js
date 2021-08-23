@@ -1,3 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
+import "./main.css";
+import "./styles/sprites.css";
+
 function saveData(data) {
   localStorage.setItem("data", JSON.stringify(data));
 }
@@ -18,4 +24,5 @@ $("#Guardar").click((e) => {
   };
   console.log('enviar:', data)
   saveData(data);
+  location = './game.html';
 });

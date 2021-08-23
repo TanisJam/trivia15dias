@@ -5,19 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP CDN -->
-    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/5.0.1/css/bootstrap.min.css">
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="https://cdn.usebootstrap.com/bootstrap/5.0.1/js/bootstrap.bundle.min.js" defer></script>
+
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
-
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="./styles/sprites.css">
-    <!-- MAIN JS -->
-    <script src="index.js" defer></script>
 
     <title>Trivia</title>
 </head>
@@ -25,14 +16,15 @@
 <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="./">
                 <!-- <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
                     class="d-inline-block align-text-top"> -->
                 Trivia
             </a>
-            <a class="nav-link active" aria-current="home" href="./about/about.html">Nosotros</a>
+            <a class="nav-link active" aria-current="home" href="./about.html">Nosotros</a>
         </div>
     </nav>
+
     <div class="mt-4 container text-center">
         <header>
             <h1>Trivia</h1>
@@ -46,7 +38,6 @@
                 </div>
             </div>
             <div class="row" style="height: 150px">
-                <!-- <div class="sprite-1 mx-auto scale-50"></div> -->
 
                 <div id="avatarSelector" class="carousel slide col-md-6 mx-auto" data-bs-ride="carousel"
                     data-bs-interval="false">
@@ -94,7 +85,7 @@
 
             <div class="row">
                 <div class="col-md-4 mx-auto">
-                    <form action="./game/game.html">
+                    <form action="./game.html">
                         <div class="form-group">
                             <label for="form-name">Nombre</label>
                             <input class="form-control text-center" name="form-name" type="text" id="form-name"
