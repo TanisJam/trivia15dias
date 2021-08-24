@@ -1,26 +1,19 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
-import $ from 'jquery';
+//Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 
+//Elementos comunes
+const parser = new DOMParser();
+const nav = require("html-loader!./partials/nav.html").default;
+const navHTML = parser.parseFromString(nav, "text/html");
+
+document.querySelector("body").prepend(navHTML.body.firstChild);
+
+
+//Styles
 import "./main.less";
 import "./styles/sprites.css";
-import Store from './app/Store.js';
-const store = new Store();
 
-import "./game/app/game"
-
-
-$("#Guardar").click((e) => {
-  e.preventDefault();
-  let name = $("#form-name").val();
-  let difficulty = $("#form-dificulty").val();
-  let avatar = $("#avatar > .active").attr("value");
-  let data = {
-    name: name,
-    difficulty: difficulty,
-    avatar: avatar,
-  };
-  console.log('enviar:', data)
-  store.savePlayerData(data);
-  location = './game.html';
-});
+//Pages
+import "./app/index.js";
+import "./game/app/game.js";

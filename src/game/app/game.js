@@ -10,7 +10,6 @@ let preguntas;
 async function loadTrivias() {
   const respuesta = await triviaReq.getData();
   preguntas = respuesta.results;
-  //const pregunta_ = preguntas[0];
   
   const preguntaEN = [
     decodeText(preguntas[0].category),
@@ -28,8 +27,7 @@ async function loadTrivias() {
   const preguntaES = await translate(preguntaEN.toString());
   const preguntaResp = preguntaES.translatedText.replace(/,/g, ' ').split("·");
   console.log(preguntaResp);
-  $('#area-pregunta').html(htmlPregunta);
-  
+  $('#area-pregunta').html(htmlPregunta);  
   
   const gameUI = new GameUI();
   gameUI.render(preguntaResp);
@@ -47,8 +45,6 @@ async function translate(string) {
   return respuesta;
 }
 
-const path = window.location.pathname;
-const pageName = path.replace(/\/|\..+/g, "");
 
 function decodeText(text) {
   const htmlText = document.createElement("textarea");
@@ -59,6 +55,9 @@ function decodeText(text) {
   return andReplaced;
 }
 
+
+const path = window.location.pathname;
+const pageName = path.replace(/\/|\..+/g, "");
 if (pageName === "game") {
   loadTrivias();
 }
