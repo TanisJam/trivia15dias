@@ -2,7 +2,28 @@
 @import "./game/styles/game.less";
 @import "./about/styles/about.less";
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #31a2e4;
+  min-height: 100%;
   min-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.icon {
+  padding: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.btn-outline-light {
+  outline: none;
+  border: none;
 }
