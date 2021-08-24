@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import $ from 'jquery';
 
-import "./main.css";
+import "./main.less";
 import "./styles/sprites.css";
 import Store from './app/Store.js';
 const store = new Store();
