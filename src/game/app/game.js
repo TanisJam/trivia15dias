@@ -1,8 +1,9 @@
+import $ from "jquery";
 import Request from "./requests";
 const triviaReq = new Request("https://opentdb.com/api.php?amount=10&type=multiple");
 const translateReq = new Request("https://libretranslate.de/translate");
 import GameUI from "./gameUI";
-const gameUI = new GameUI();
+const htmlPregunta = require("html-loader!./../partials/pregunta.html").default;
 
 let preguntas;
 
@@ -10,7 +11,7 @@ async function loadTrivias() {
   const respuesta = await triviaReq.getData();
   preguntas = respuesta.results;
   //const pregunta_ = preguntas[0];
-
+  
   const preguntaEN = [
     decodeText(preguntas[0].category),
     "·",
@@ -27,6 +28,10 @@ async function loadTrivias() {
   const preguntaES = await translate(preguntaEN.toString());
   const preguntaResp = preguntaES.translatedText.replace(/,/g, ' ').split("·");
   console.log(preguntaResp);
+  $('#area-pregunta').html(htmlPregunta);
+  
+  
+  const gameUI = new GameUI();
   gameUI.render(preguntaResp);
 }
 
@@ -45,10 +50,6 @@ async function translate(string) {
 const path = window.location.pathname;
 const pageName = path.replace(/\/|\..+/g, "");
 
-if (pageName === "game") {
-  loadTrivias();
-}
-
 function decodeText(text) {
   const htmlText = document.createElement("textarea");
   htmlText.innerHTML = text;
@@ -56,4 +57,8 @@ function decodeText(text) {
   const ampReplaced = quotReplaced.replace(/&amp;/g, ' ');
   const andReplaced = ampReplaced.replace(/&/g, ' ');
   return andReplaced;
+}
+
+if (pageName === "game") {
+  loadTrivias();
 }

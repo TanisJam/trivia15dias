@@ -14,92 +14,51 @@
     <!-- NAV BAR-->
     <%= require('html-loader!./partials/nav.html').default %>
 
-    <div class="mt-4 container text-center">
-        <header>
-            <h1>Trivia</h1>
-            <p>Tu juego de confianza</p>
-        </header>
+        <div class="mt-4 container text-center">
+            <header>
+                <h1>Trivia</h1>
+                <p>Tu juego de confianza</p>
+            </header>
 
-        <section id="opciones">
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <h3>Opciones:</h3>
-                </div>
-            </div>
-            <div class="row" style="height: 150px">
-
-                <div id="avatarSelector" class="carousel slide col-md-6 mx-auto" data-bs-ride="carousel"
-                    data-bs-interval="false">
-                    <div id="avatar" class="carousel-inner">
-                        <div value="1" class="carousel-item active" style="height: 150px">
-                            <div class="sprite-1 mx-auto scale-50"></div>
-                        </div>
-                        <div value="2" class="carousel-item" style="height: 150px">
-                            <div class="sprite-2 mx-auto scale-50"></div>
-                        </div>
-                        <div value="3" class="carousel-item" style="height: 150px">
-                            <div class="sprite-3 mx-auto scale-50"></div>
-                        </div>
-                        <div value="4" class="carousel-item" style="height: 150px">
-                            <div class="sprite-4 mx-auto scale-50"></div>
-                        </div>
-                        <div value="5" class="carousel-item" style="height: 150px">
-                            <div class="sprite-5 mx-auto scale-50"></div>
-                        </div>
-                        <div value="6" class="carousel-item" style="height: 150px">
-                            <div class="sprite-6 mx-auto scale-50"></div>
-                        </div>
-                        <div value="7" class="carousel-item" style="height: 150px">
-                            <div class="sprite-7 mx-auto scale-50"></div>
-                        </div>
-                        <div value="8" class="carousel-item" style="height: 150px">
-                            <div class="sprite-8 mx-auto scale-50"></div>
-                        </div>
-                        <div value="9" class="carousel-item" style="height: 150px">
-                            <div class="sprite-9 mx-auto scale-50"></div>
-                        </div>
+            <section id="opciones">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <h3>Opciones:</h3>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#avatarSelector"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#avatarSelector"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-            </div>
+                <div class="row" style="height: 150px">
 
-            <div class="row">
-                <div class="col-md-4 mx-auto">
-                    <form action="./game.html">
-                        <div class="form-group">
-                            <label for="form-name">Nombre</label>
-                            <input class="form-control text-center" name="form-name" type="text" id="form-name"
-                                placeholder="Pedro Perez" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="form-dificulty" class="mt-2">Dificultad</label>
-                            <select class="form-control text-center" name="form-dificulty" id="form-dificulty">
-                                <option value="1">Muy Facil</option>
-                                <option value="2">Facil</option>
-                                <option value="3" selected>Intermedio</option>
-                                <option value="4">Dificil</option>
-                                <option value="5">Muy Dificil</option>
-                                <option value="6">Imposible</option>
-                            </select>
-                        </div>
-                        <input id="Guardar" type="submit" value="Guardar" class="mt-2 btn btn-primary">
-                    </form>
+                    <%= require('html-loader!./partials/carousel.html').default %>
                 </div>
-            </div>
 
-        </section>
+                <div class="row">
+                    <div class="col-md-4 mx-auto">
+                        <form action="./game.html">
+                            <div class="form-group">
+                                <label for="form-name">Nombre</label>
+                                <input class="form-control text-center" name="form-name" type="text" id="form-name"
+                                    placeholder="Pedro Perez" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-dificulty" class="mt-2">Dificultad</label>
+                                <select class="form-control text-center" name="form-dificulty" id="form-dificulty">
+                                    <option value="1">Muy Facil</option>
+                                    <option value="2">Facil</option>
+                                    <option value="3" selected>Intermedio</option>
+                                    <option value="4">Dificil</option>
+                                    <option value="5">Muy Dificil</option>
+                                    <option value="6">Imposible</option>
+                                </select>
+                            </div>
+                            <input id="Guardar" type="submit" value="Guardar" class="mt-2 btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+
+            </section>
 
 
-    </div>
+        </div>
 </body>
 
 </html>

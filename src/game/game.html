@@ -14,64 +14,46 @@
     <!-- NABBAR -->
     <%= require('html-loader!./../partials/nav.html').default %>
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-6 offset-3">
-                <h1 id="categoria" class="text-center">
-                    Entretenimiento: Musica
-                </h1>
+        <div class="container text-center">
+            <div id="area-pregunta">
+
+                <div class="loader"></div>
+                
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-2 d-flex flex-column justify-content-around align-items-center"
+                    id="seccion-random-izquierda">
+                    <div class="img-random"></div>
+                    <div class="img-random"></div>
+                    <div class="img-random"></div>
+                    <div class="img-random"></div>
+                </div>
+                <div class="col-8 text-center" style="height: 20rem; overflow: hidden">
+                    <img height="500"
+                        src="https://images.unsplash.com/photo-1558191053-2608d9946e36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80">
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-around align-items-center"
+                    id="seccion-random-derecha">
+                    <div class="img-random"></div>
+                    <div class="img-random"></div>
+                    <div class="img-random"></div>
+                    <div class="img-random"></div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="d-flex justify-content-around">
+                    <div class="icono-pregunta"></div>
+                    <div class="icono-pregunta"></div>
+                    <div class="icono-pregunta"></div>
+                    <div class="icono-pregunta"></div>
+                    <div class="icono-pregunta"></div>
+                    <div class="icono-pregunta"></div>
+                    <div class="icono-pregunta"></div>
+                    <div class="icono-pregunta"></div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-8 offset-2">
-                <p id="pregunta" class="text-center"> Who is the frontman of the band 30 Seconds to Mars?</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div id="respuesta-1" class="btn btn-info btn-block m-1">Respuesta 1</div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div id="respuesta-2" class="btn btn-info btn-block m-1">Respuesta 2</div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div id="respuesta-3" class="btn btn-info btn-block m-1">Respuesta 3</div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div id="respuesta-4" class="btn btn-info btn-block m-1">Respuesta 4</div>
-            </div>
-        </div>
-        <div class="row pt-2">
-            <div class="col-2 d-flex flex-column justify-content-around align-items-center" id="seccion-random-izquierda">
-                <div class="img-random"></div>
-                <div class="img-random"></div>
-                <div class="img-random"></div>
-                <div class="img-random"></div>
-            </div>
-            <div class="col-8 text-center" style="height: 20rem; overflow: hidden">
-                <img height="500"
-                    src="https://images.unsplash.com/photo-1558191053-2608d9946e36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80">
-            </div>
-            <div class="col-2 d-flex flex-column justify-content-around align-items-center" id="seccion-random-derecha">
-                <div class="img-random"></div>
-                <div class="img-random"></div>
-                <div class="img-random"></div>
-                <div class="img-random"></div>
-            </div>
-        </div>
-        <div class="row mt-2">
-            <div class="d-flex justify-content-around">
-                <div class="icono-pregunta"></div>
-                <div class="icono-pregunta"></div>
-                <div class="icono-pregunta"></div>
-                <div class="icono-pregunta"></div>
-                <div class="icono-pregunta"></div>
-                <div class="icono-pregunta"></div>
-                <div class="icono-pregunta"></div>
-                <div class="icono-pregunta"></div>
-            </div>
-        </div>
-    </div>
 
 
 </body>
