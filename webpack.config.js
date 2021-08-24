@@ -33,10 +33,6 @@ module.exports = {
       filename: "about.html",
       template: "./src/about/about.html",
     }),
-    new HtmlWebpackPlugin({
-      filename: "board.html",
-      template: "./src/game/board.html",
-    }),
   ],
   performance: {
     maxEntrypointSize: 768000,
