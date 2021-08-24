@@ -52,7 +52,8 @@ if (pageName === "game") {
 function decodeText(text) {
   const htmlText = document.createElement("textarea");
   htmlText.innerHTML = text;
-  let quotReplaced = htmlText.innerText.replace(/&quot;/g, '\\"');
-  let ampReplaced = quotReplaced.replaceAll('&amp;', '&');
-  return ampReplaced;
+  const quotReplaced = htmlText.innerText.replace(/&quot;/g, '\\"');
+  const ampReplaced = quotReplaced.replace(/&amp;/g, ' ');
+  const andReplaced = ampReplaced.replace(/&/g, ' ');
+  return andReplaced;
 }
