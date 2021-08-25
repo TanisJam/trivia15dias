@@ -5,15 +5,13 @@ export default class UI {
   constructor() {
     this.numeros = [1, 2, 3, 4];
   }
-
   randomPos() {
     return this.numeros.splice(
       Math.floor(Math.random() * this.numeros.length),
       1
     );
   }
-
-  render(pregunta, area, cb) {
+  renderTop(pregunta, area, cb) {
     area.html(htmlPregunta);
     $("#categoria").text(pregunta.category);
     $("#pregunta").text(pregunta.question);
@@ -30,5 +28,11 @@ export default class UI {
     $(`#respuesta-${this.randomPos()}`)
       .text(pregunta.incorrect_3)
       .on("click", cb);
+  }
+  renderBottom(imgs, progress){
+    progress.forEach((className, index) => {
+      $(`#progreso-${index}`).addClass(className);
+    })
+
   }
 }

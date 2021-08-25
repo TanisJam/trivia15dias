@@ -17,11 +17,16 @@ async function run() {
   if (player) {
     if (player.getQuestion()) {
       const question = player.getQuestion();
-      store.editPlayerData(player.getData());
-      const questionES = await translate(question); 
-      gameUI.render(questionES, $("#area-pregunta"), player.checkQuestion.bind(player));
+      const questionES = await translate(question);
+      gameUI.renderTop(
+        questionES,
+        $("#area-pregunta"),
+        player.checkQuestion.bind(player)
+      );
+      let imgs = ['https://i.imgur.com/sFq0wAC.jpeg'];
+      gameUI.renderBottom(imgs, player.progress)
     } else {
-      player.setQuestions( await loadTrivias());
+      player.setQuestions(await loadTrivias());
       const playerData = player.getData();
       console.log(playerData);
       store.savePlayerData(playerData);

@@ -1,3 +1,6 @@
+import Store from "./../../app/Store.js";
+const store = new Store();
+
 export default class Player {
   constructor(obj) {
     this.avatar = obj.avatar;
@@ -6,6 +9,7 @@ export default class Player {
     this.questions = obj.questions || false;
     this.currentQuestion = obj.currentQuestion || false;
     this.level = obj.level || 0;
+    this.progress = obj.progress || [];
     this.diffSchemes = [
       ["f", "f", "f", "f", "f", "m", "m", "d"],
       ["f", "f", "f", "f", "m", "m", "d", "d"],
@@ -14,6 +18,9 @@ export default class Player {
       ["f", "m", "m", "d", "d", "d", "d", "d"],
       ["m", "m", "d", "d", "d", "d", "d", "d"],
     ];
+  }
+  save() {
+    store.editPlayerData(this.getData());
   }
   getQuestion() {
     if (this.questions) {
@@ -29,6 +36,7 @@ export default class Player {
         incorrect_2: this.currentQuestion.incorrect_answers[1],
         incorrect_3: this.currentQuestion.incorrect_answers[2],
       };
+      this.save();
       return question;
     }
     return false;
@@ -36,10 +44,25 @@ export default class Player {
   checkQuestion(e) {
     const answer = e.target.getAttribute("correct");
 
+    this.level++;
+    this.currentQuestion = false;
+
     if (answer) {
-      console.log('Correcto!')
+      this.progress.push("pass");
+      window.alert("Correcto!");
     } else {
-      console.log('Incorrecto!')
+      this.progress.push("fail");
+      window.alert("Incorrecto!");
+    }
+    this.save();
+    if (this.level > 7) {
+      this.questions = false;
+      this.level = 0;
+      this.progress= [];
+      this.save();
+      location = "./";
+    } else {
+      location = "./game.html";
     }
   }
 
@@ -56,6 +79,7 @@ export default class Player {
       questions: this.questions,
       currentQuestion: this.currentQuestion,
       level: this.level,
+      progress: this.progress,
     };
     return data;
   }

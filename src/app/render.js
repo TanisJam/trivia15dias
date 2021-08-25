@@ -28,7 +28,7 @@ const render = {
         difficulty: difficulty,
         avatar: avatar,
       };
-      if (name !== "") {
+      if (name !== "") {        
         store.savePlayerData(data);
       }
     });
