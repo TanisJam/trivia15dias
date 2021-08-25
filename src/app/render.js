@@ -50,7 +50,7 @@ const render = {
         avatar: avatar,
       };
       if (name !== "") {
-        store.savePlayerData(data);
+        store.editPlayerData(data);
       }
     });
 

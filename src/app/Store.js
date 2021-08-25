@@ -1,7 +1,5 @@
 export default class Store {
   savePlayerData(playerData) {
-    playerData.questions = {}
-    console.log(playerData);
     localStorage.setItem("player", JSON.stringify(playerData));
   }
 
@@ -11,6 +9,12 @@ export default class Store {
     }
     let data = JSON.parse(localStorage.getItem("player"));
     return data;
+  }
+
+  editPlayerData(data) {
+    const thisData = this.getPlayerData();
+    const newData = Object.assign({}, thisData, data);
+    this.savePlayerData(newData);
   }
 
   wipePlayerData() {
