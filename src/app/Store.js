@@ -1,5 +1,7 @@
 export default class Store {
   savePlayerData(playerData) {
+    playerData.questions = {}
+    console.log(playerData);
     localStorage.setItem("player", JSON.stringify(playerData));
   }
 

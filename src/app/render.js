@@ -19,8 +19,7 @@ const render = {
     const htmlOpciones =
       require("html-loader!./../partials/opciones.html").default;
     $("#opciones").html(htmlOpciones);
-    $("#guardar").on("click", (e) => {
-      e.preventDefault();
+    $("#guardar").on("click", () => {
       let name = $("#form-name").val();
       let difficulty = $("#form-dificulty").val();
       let avatar = $("#avatar > .active").attr("value");
@@ -29,20 +28,19 @@ const render = {
         difficulty: difficulty,
         avatar: avatar,
       };
-      store.savePlayerData(data);
-      location = "./";
+      if (name !== "") {
+        store.savePlayerData(data);
+      }
     });
   },
   edit(playerData) {
-      //active
     const htmlEdit = require("html-loader!./../partials/edit.html").default;
     $("#opciones").html(htmlEdit);
-    $(`div[value=${playerData.avatar}]`).addClass('active');
+    $(`div[value=${playerData.avatar}]`).addClass("active");
     $("#form-name").val(playerData.name);
-    $(`option[value=${playerData.difficulty}]`).prop("selected", true)
+    $(`option[value=${playerData.difficulty}]`).prop("selected", true);
 
-    $("#guardar").on("click", (e) => {
-      e.preventDefault();
+    $("#guardar").on("click", () => {
       let name = $("#form-name").val();
       let difficulty = $("#form-dificulty").val();
       let avatar = $("#avatar > .active").attr("value");
@@ -51,13 +49,14 @@ const render = {
         difficulty: difficulty,
         avatar: avatar,
       };
-      store.savePlayerData(data);
-      location = "./";
+      if (name !== "") {
+        store.savePlayerData(data);
+      }
     });
 
-    $("#eliminar").on("click", ()=>{
-        store.wipePlayerData();
-    })
+    $("#eliminar").on("click", () => {
+      store.wipePlayerData();
+    });
   },
 };
 
