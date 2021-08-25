@@ -11,10 +11,10 @@ async function loadTrivias() {
   const respMedia = await triviaReq.getData({ params: dificulty.media });
   const respFacil = await triviaReq.getData({ params: dificulty.facil });
 
-  const pDificil = respDificil.results;
-  const pMedia = respMedia.results;
-  const pFacil = respFacil.results;
-  const preguntas = { pDificil, pMedia, pFacil };
+  const d = respDificil.results;
+  const m = respMedia.results;
+  const f = respFacil.results;
+  const preguntas = { d, m, f };
   return preguntas;
 }
 

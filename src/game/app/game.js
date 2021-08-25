@@ -1,7 +1,7 @@
 import loadTrivias from "./loadTrivias.js";
 import translate from "./translate.js";
 import $ from "jquery";
-import Store from "./../../app/Store";
+import Store from "./../../app/Store.js";
 const store = new Store();
 import GameUI from "./gameUI";
 const gameUI = new GameUI();
@@ -17,8 +17,9 @@ async function run() {
   if (player) {
     if (player.getQuestion()) {
       const question = player.getQuestion();
+      store.editPlayerData(player.getData());
       const questionES = await translate(question); 
-      gameUI.render(questionES, $("#area-pregunta"));
+      gameUI.render(questionES, $("#area-pregunta"), player.checkQuestion.bind(player));
     } else {
       player.setQuestions( await loadTrivias());
       const playerData = player.getData();
