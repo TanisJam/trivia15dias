@@ -26,7 +26,6 @@ async function loadTrivias() {
   ];
   const preguntaES = await translate(preguntaEN.toString());
   const preguntaResp = preguntaES.translatedText.replace(/,/g, ' ').split("·");
-  console.log(preguntaResp);
   $('#area-pregunta').html(htmlPregunta);  
   
   const gameUI = new GameUI();

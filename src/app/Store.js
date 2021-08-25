@@ -7,7 +7,11 @@ export default class Store {
     if (localStorage.getItem("player") === null) {
       return false;
     }
-    let data = JSON.parse(localStorage.getItem("data"));
+    let data = JSON.parse(localStorage.getItem("player"));
     return data;
+  }
+
+  wipePlayerData() {
+    localStorage.removeItem("player");
   }
 }

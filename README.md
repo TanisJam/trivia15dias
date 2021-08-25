@@ -25,12 +25,12 @@ Ademas se propuso implementar un sistema de pistas mediante imágenes obtenidas 
 - [x] Generar estructura básica del proyecto con las paginas index, game y about.
 - [x] Seleccionar un diseño general y consistente.
 - [x] Implementar un sistema de navegación para el sitio.
-- [ ] Completar sección principal:
+- [x] Completar sección principal:
   - [x] Diseño del menú del juego.
-  - [ ] Implementar la carga de datos del jugador.
-  - [ ] Almacenar los datos recibidos en local storage.
-  - [ ] Permitir al usuario la modificación de los datos.
-  - [ ] Permitir la selección de opciones para el juego.
+  - [x] Implementar la carga de datos del jugador.
+  - [x] Almacenar los datos recibidos en local storage.
+  - [x] Permitir al usuario la modificación de los datos.
+  - [x] Permitir la selección de opciones para el juego.
 - [ ] Completar sección del juego:
   - [x] Diseño de la interfaz del juego.
   - [ ] Solicitar y almacenar datos de Open Trivia Database.
