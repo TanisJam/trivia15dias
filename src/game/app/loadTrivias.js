@@ -1,9 +1,9 @@
 import Request from "./requests";
 const triviaReq = new Request("https://opentdb.com/api.php");
 const dificulty = {
-  dificil: "?amount=6&difficulty=hard&type=multiple",
-  media: "?amount=2&difficulty=medium&type=multiple",
-  facil: "?amount=5&difficulty=easy&type=multiple",
+  dificil: "?amount=8&difficulty=hard&type=multiple",
+  media: "?amount=8&difficulty=medium&type=multiple",
+  facil: "?amount=8&difficulty=easy&type=multiple",
 };
 
 async function loadTrivias() {

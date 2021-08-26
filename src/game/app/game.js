@@ -28,7 +28,6 @@ async function run() {
     } else {
       player.setQuestions(await loadTrivias());
       const playerData = player.getData();
-      console.log(playerData);
       store.savePlayerData(playerData);
       location = "./game.html";
     }
