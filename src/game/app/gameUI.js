@@ -30,6 +30,11 @@ export default class UI {
       .on("click", cb);
   }
   renderBottom(imgs, progress){
+    //$('#pista').attr('src', imgs[0].url);
+    $('.img-random img').each((i, value) => {
+      console.log(i, value.getAttribute('src'));
+    })
+
     progress.forEach((className, index) => {
       $(`#progreso-${index}`).addClass(className);
     })

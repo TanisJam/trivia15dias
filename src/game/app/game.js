@@ -1,5 +1,6 @@
 import loadTrivias from "./loadTrivias.js";
 import translate from "./translate.js";
+import imageRequest from "./imageRequest.js";
 import $ from "jquery";
 import Store from "./../../app/Store.js";
 const store = new Store();
@@ -37,5 +38,6 @@ async function run() {
 }
 
 if (pageName === "game") {
+  //imageRequest('gatito malo');
   run();
 }
