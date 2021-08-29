@@ -21,3 +21,4 @@ import "./styles/sprites.css";
 //Pages
 import "./app/index.js";
 import "./game/app/game.js";
+import "./about/about.js";

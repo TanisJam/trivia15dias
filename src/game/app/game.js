@@ -17,8 +17,10 @@ const pageName = path.replace(/\/|\..+/g, "");
 async function run() {
   if (player) {
     if (player.getQuestion()) {
-      let imgs = ['https://i.imgur.com/sFq0wAC.jpeg'];
-      gameUI.renderBottom(imgs, player.progress);
+      gameUI.renderProgress(player.progress);
+      const correctAnswer = player.currentQuestion.correct_answer;
+      const imgs = await imageRequest(correctAnswer);
+      gameUI.renderBottom(imgs);
       const question = player.getQuestion();
       const questionES = await translate(question);
       gameUI.renderTop(
@@ -38,6 +40,7 @@ async function run() {
 }
 
 if (pageName === "game") {
-  //imageRequest('gatito malo');
   run();
 }
+
+

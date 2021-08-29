@@ -4,7 +4,7 @@ const store = new Store();
 
 const path = window.location.pathname;
 const pageName = path.replace(/\/|\..+/g, "");
-if (pageName === "") {
+if (pageName === "" || pageName === "index") {
   if (store.getPlayerData()) {
     const playerData = store.getPlayerData();
     render.player(playerData);
