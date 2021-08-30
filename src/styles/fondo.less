@@ -1,5 +1,7 @@
 #hexagons {
+  pointer-events: auto;
   z-index: -1;
+  overflow: hidden;
   position: absolute;
   top:0;
   left:0;
@@ -19,12 +21,15 @@
   animation: bgc 10s linear infinite;
 }
 
+
 @keyframes bgc {
 0% {   background-position: 0 0; }
 50% {  background-position: 100% 0; }
 100% { background-position: 0 0; }
 }
-
+svg {
+  height: 100vh;
+}
 .hexagon {
   fill: rgba(255,255,255,0);
   -webkit-transition: fill 3000ms linear;
