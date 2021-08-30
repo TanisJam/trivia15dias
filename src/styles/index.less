@@ -1,9 +1,9 @@
 @import "./fondo.less";
 
 #index {
-
+  color: white;
   pointer-events: none;
-  
+
   .medallero {
     filter: drop-shadow(-1px 1px 2px rgba(255, 255, 255, 0.25));
     .star {
@@ -22,7 +22,7 @@
         39% 35%
       );
       box-shadow: 8px 4px 20px 0px rgba(94, 94, 94, 0.75) inset,
-        -1px -1px 20px 0px rgba(255, 255, 255, .5) inset;
+        -1px -1px 20px 0px rgba(255, 255, 255, 0.5) inset;
     }
     .oro {
       background: #ffbf00;
@@ -42,99 +42,119 @@
     cursor: pointer;
   }
 
-a, button, .form-control, span, h3, #guardar {
-  pointer-events: auto;
-}
+  a,
+  button,
+  .form-control,
+  span {
+    pointer-events: auto;
+  }
 
-.container span {
-  display: inline-block;
-  text-align: center;
-  font-size: 15rem;
-  font-weight: bold;
-  letter-spacing: -15px;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-
-.container span:hover {
-  filter: contrast(250%);
-  text-shadow: 1px 1px 7px rgb(255, 255, 255);
-  transform: scale(1.1);
-}
-
-
-.container {
-  span:nth-child(1) {
-    color: #FFD401;
-  }
-  span:nth-child(2){
-    color: #00EBFF;
-  }
-  span:nth-child(3){
-    color: #00FE00;
-  }
-  span:nth-child(4){
-    color: #FF0CE0;
-  }
-  span:nth-child(5){
-    color: #FF1461;
-  }
-  span:nth-child(6){
-    color: #FF5A1C;
-  }
-}
-#tituloTrivia{
-  padding: -5rem;
-}
-header {
-  p{
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+  .container span {
+    display: inline-block;
     text-align: center;
-    margin-top: -10%;
-    letter-spacing: 9px;
-    margin-left: 25px;
+    font-size: 15rem;
+    font-weight: bold;
+    letter-spacing: -15px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
   }
-}
 
-#tituloTrivia, header {
-  margin-top: -10%;
-}
+  .container span:hover {
+    filter: contrast(250%);
+    text-shadow: 1px 1px 7px rgb(255, 255, 255);
+    transform: scale(1.1);
+  }
 
-div h3 {
-  font-size: 25px;
-  margin-top: 15%;
-  text-transform: uppercase;
-  cursor: pointer;
-}
+  .container {
+    span:nth-child(1) {
+      color: #ffd401;
+    }
+    span:nth-child(2) {
+      color: #00ebff;
+    }
+    span:nth-child(3) {
+      color: #00fe00;
+    }
+    span:nth-child(4) {
+      color: #ff0ce0;
+    }
+    span:nth-child(5) {
+      color: #ff1461;
+    }
+    span:nth-child(6) {
+      color: #ff5a1c;
+    }
+  }
+  #tituloTrivia {
+    padding: -5rem;
+  }
+  header {
+    p {
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: -10%;
+      letter-spacing: 9px;
+      margin-left: 25px;
+    }
+  }
 
-div h3:hover {
-    transform: scale(1.2);
-    letter-spacing: 9px;
-}
+  #tituloTrivia,
+  header {
+    margin-top: -10%;
+  }
 
-#form-name, #form-dificulty {
-  border:0;
-  background: none;
-  display: block;
-  margin:20px auto;
-  border: 2px solid #ffd000;
-  background-color: rgba(0, 0, 0, 0.377);
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  margin-top: auto;
-} 
-#form-name:focus, #form-dificulty:focus {
-  width: 240px;
-  border-color: #ff0037;
-}
+  div h3 {
+    font-size: 25px;
+    margin-top: 15%;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 
-#guardar{
-  border-radius: 50px;
-  transition: 0.25s;
-  cursor: pointer;
-}
+  #form-name,
+  #form-dificulty {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ffd000;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    margin-top: auto;
+  }
+  #form-name:focus,
+  #form-dificulty:focus {
+    width: 240px;
+    border-color: #ff0037;
+  }
 
+  button {
+    border-radius: 50px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  @media (max-width:650px) {
+    #tituloTrivia {
+      span {
+        font-size: 10em;
+      }
+    }
+    
+  }
+  @media (max-width:450px) {
+    #tituloTrivia {
+      span {
+        font-size: 6em;
+      }
+    }
+    header{
+      p {
+        font-size: 1rem;
+      }
+    }
+    
+  }
 }

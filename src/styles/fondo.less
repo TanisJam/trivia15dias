@@ -3,35 +3,45 @@
   z-index: -1;
   overflow: hidden;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   min-height: 420px;
   border: 0 solid rgb(32, 33, 61);
   margin-bottom: 0;
-  background: hsla(0,0%,100%,0);
-/*     color: #676767; */
-  
-  background: linear-gradient(to right, rgb(26, 5, 29) 0%, rgb(50, 38, 104) 41%, rgb(45, 0, 66) 100%);
+  background: hsla(0, 0%, 100%, 0);
+  /*     color: #676767; */
+
+  background: linear-gradient(
+    to right,
+    rgb(26, 5, 29) 0%,
+    rgb(50, 38, 104) 41%,
+    rgb(45, 0, 66) 100%
+  );
   background-size: 400% 100%;
   background-position: 0 0;
   background-clip: content-box;
   -webkit-animation: g 10s linear infinite;
   animation: bgc 10s linear infinite;
+  svg {
+    height: 100vh;
+  }
 }
-
 
 @keyframes bgc {
-0% {   background-position: 0 0; }
-50% {  background-position: 100% 0; }
-100% { background-position: 0 0; }
-}
-svg {
-  height: 100vh;
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 .hexagon {
-  fill: rgba(255,255,255,0);
+  fill: rgba(255, 255, 255, 0);
   -webkit-transition: fill 3000ms linear;
   -moz-transition: fill 3000ms linear;
   -o-transition: fill 3000ms linear;
@@ -47,4 +57,3 @@ svg {
   -ms-transition: fill 1000ms linear;
   transition: fill 1000ms linear;
 }
-
