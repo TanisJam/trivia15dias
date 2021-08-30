@@ -1,6 +1,14 @@
 import $ from "jquery";
 import Store from "./Store.js";
 const store = new Store();
+const diff = [
+  "Muy facil",
+  "Facil",
+  "Intermedio",
+  "Dificil",
+  "Muy dificil",
+  "Imposible",
+];
 
 const render = {
   player(playerData) {
@@ -9,7 +17,14 @@ const render = {
     $("#opciones").html(htmlPersonaje);
     $("#nombre").text(playerData.name);
     $("#avatar").addClass(`sprite-${playerData.avatar}`);
-    $("#dificultad").text(playerData.difficulty);
+    $.each(playerData.medallas, (propName, propValue) => {
+      for (let index = 0; index < propValue; index++) {
+        const medal = $(`<div class="star ${propName}"></div>`);
+        $(".medallero").append(medal);
+      }
+    });
+
+    $("#dificultad").text(diff[playerData.difficulty]);
     $("#jugar").on("click", () => {
       location = "./game.html";
     });
@@ -28,7 +43,7 @@ const render = {
         difficulty: difficulty,
         avatar: avatar,
       };
-      if (name !== "") {        
+      if (name !== "") {
         store.savePlayerData(data);
       }
     });
