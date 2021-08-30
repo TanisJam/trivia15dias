@@ -10,6 +10,9 @@
 </head>
 
 <body id="about">
+    
+
+       
 
     <!-- Fondo -->
     <ul class="circles">
@@ -25,17 +28,60 @@
         <li></li>
     </ul>
 
+
+    <div id="sidebar" >
+        <div class= "toggle-btn">
+            <span>&#9776;</span>
+        </div>
+        <img src="public/evuca.jpg" width=60% alt="logo evuca" class="logo">
+        
+        <section>
+            <p class="trivia">
+                "TRIVIA 15 DIAS"
+
+                Como parte del proyecto Evuca se nos asignó la tarea de crear un sitio web en el que aplicar los conocimientos adquiridos hasta el momento. 
+                Este resulta en un punto de inflexión deseado para fortalecer las bases de HTML, CSS y JavaScript.
+               
+            </p>
+        </section>
+        <article>
+        <section>
+            <div class ="tablero">
+                <div id="amarillo" class= "posicion amarillo" data-color ="amarillo"> </div>
+                <div id="azul" class= "posicion azul" data-color ="azul"> </div>
+                <div id="rojo" class= "posicion rojo" data-color ="rojo"> </div>
+                <div id="verde" class= "posicion verde" data-color ="verde"> </div>
+                <button id="btn-inicio" class ="btn-inicio">Comenzar</button>
+            </div>
+        </section>
+    </article>
+    </div> 
+
     <div class="container d-flex flex-column align-items-center">
         <h1>Nosotros</h1>
+    <div class= "contenedor">
+    <p>PROGRAMADORES</p>
+    <ul>
+        <li>Full</li>
+        <li>Stack</li>
+        <li>Developers</li>
+    </ul>
+</div>
+
+    
+        <div class= "container-cards">
         <div class="row">
             <div class="col-md-4">
                 <div class="card my-1">
                     <div class="card-body">
                         <h5 class="card-title">Mariela</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <img class ="card-img-top img fluid" src="public/trianglify-lowres.png" alt="fondo Fotos">
+                        <div class="text-center" >
+                        <img src="public/marie.jpg" class="img fluid yoimagen rounded-circle"  alt="foto marie" width="80"/>
+                        </div> 
+                        <h6 class="card-subtitle mb-2 text-muted">Conocimientos Aplicados</h6>
+                        <p class="card-text">HTML5 , CSS, JAVASCRIPT, WEBPACK, BOOTSTRAP, GIT,LESS, jQuery
+                            .</p>
                         <a href="#" class="card-link">Card link</a>
                         <a href="#" class="card-link">Another link</a>
                     </div>
@@ -45,10 +91,12 @@
                 <div class="card my-1">
                     <div class="card-body">
                         <h5 class="card-title">Brenda</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <img class ="card-img-top img fluid" src="public/trianglify-lowres (1).png" alt="fondo Fotos">
+                        <div class="text-center" >
+                        <img src="public/brenda.png" class="img fluid yoimagen rounded-circle "  alt="foto brenda" width= "80"/>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Conocimientos Aplicados</h6>
+                        <p class="card-text">HTML5 , CSS, JAVASCRIPT, WEBPACK, BOOTSTRAP, GIT,LESS, jQuery..</p>
                         <a href="#" class="card-link">Card link</a>
                         <a href="#" class="card-link">Another link</a>
                     </div>
@@ -58,16 +106,20 @@
                 <div class="card my-1">
                     <div class="card-body">
                         <h5 class="card-title">Mauricio</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <img class ="card-img-top img fluid" src="public/trianglify-lowres (2).png" alt="fondo Fotos">
+                        <div class="text-center">
+                        <img src="public/mauricio.png" class="img fluid yoimagen rounded-circle" alt="foto mauricio" width="80"/>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Conocimientos Aplicados</h6>
+                        <p class="card-text">HTML5 , CSS, JAVASCRIPT, WEBPACK, BOOTSTRAP, GIT,LESS, jQuery
+                        </p>
                         <a href="#" class="card-link">Card link</a>
                         <a href="#" class="card-link">Another link</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <div class="row mt-2">
 
             <form class="mb-2">
@@ -83,8 +135,12 @@
                 <button type="submit" class="btn btn-primary mt-2">Contactanos</button>
             </form>
 
+        
         </div>
     </div>
+    
+   
+
 </body>
 
 </html>
