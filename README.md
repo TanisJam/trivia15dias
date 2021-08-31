@@ -33,9 +33,9 @@ Ademas se propuso implementar un sistema de pistas mediante imágenes obtenidas 
   - [x] Permitir la selección de opciones para el juego.
 - [ ] Completar sección del juego:
   - [x] Diseño de la interfaz del juego.
-  - [ ] Solicitar y almacenar datos de Open Trivia Database.
-  - [ ] Tomar la pregunta normalizada y enviarla a Libre Translate y almacenar su respuesta.
-  - [ ] Realizar una petición de imágenes a Unsplash utilizando como palabra clave la respuesta correcta.
+  - [x] Solicitar y almacenar datos de Open Trivia Database.
+  - [x] Tomar la pregunta normalizada y enviarla a Libre Translate y almacenar su respuesta.
+  - [ ] Realizar una petición de imágenes utilizando como palabra clave la respuesta correcta.
   - [ ] Mostrar la imagen recibida de Unsplash cuando el usuario solicite una pista.
   - [ ] Implementar un sistema de niveles u objetivo para el juego.
 - [ ] Completar sección sobre nosotros:

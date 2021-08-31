@@ -29,15 +29,18 @@ export default class UI {
       .text(pregunta.incorrect_3)
       .on("click", cb);
   }
-  renderBottom(imgs, progress){
-    //$('#pista').attr('src', imgs[0].url);
-    $('.img-random img').each((i, value) => {
-      console.log(i, value.getAttribute('src'));
-    })
+  renderBottom(imgs) {
+    $("#pista img").attr("src", imgs[0].url);
+    $(".img-random img").each((i, value) => {
+      if (imgs[i + 1] != undefined) {
+        value.setAttribute("src", imgs[i + 1].url);
+      }
+    });
 
+  }
+  renderProgress(progress){
     progress.forEach((className, index) => {
       $(`#progreso-${index}`).addClass(className);
-    })
-
+    });
   }
 }
