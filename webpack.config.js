@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 module.exports = {
   mode: "development",
@@ -33,6 +34,9 @@ module.exports = {
       filename: "about.html",
       template: "./src/about/about.html",
     }),
+    new CopyPlugin({
+      patterns: [{ from: "src/imgs", to: "public" },]
+    })
   ],
   performance: {
     maxEntrypointSize: 768000,

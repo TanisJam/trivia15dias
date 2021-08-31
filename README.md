@@ -1,7 +1,7 @@
-# Trivia 15 dias
+  # Trivia 15 dias
 
-Como parte del proyecto Evuca se nos asignó la tarea de crear un sitio web en el que aplicar los conocimientos adquiridos hasta el momento. Este resulta en un punto de inflexión deseado para fortalecer las bases de HTML, CSS y JavaScript.
-Para llevarlo a cabo se formaron grupos de 3 a 4 integrantes y se fijo un plazo máximo de entrega de 15 dias.
+  Como parte del proyecto Evuca se nos asignó la tarea de crear un sitio web en el que aplicar los conocimientos adquiridos hasta el momento. Este resulta en un punto de inflexión deseado para fortalecer las bases de HTML, CSS y JavaScript.
+  Para llevarlo a cabo se formaron grupos de 3 a 4 integrantes y se fijo un plazo máximo de entrega de 15 dias.
 
 ### Requerimientos mínimos
 
