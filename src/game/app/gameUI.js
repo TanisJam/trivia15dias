@@ -30,6 +30,7 @@ export default class UI {
       .on("click", cb);
   }
   renderBottom(imgs) {
+   
     $("#pista img").attr("src", imgs[0].url);
     $(".img-random img").each((i, value) => {
       if (imgs[i + 1] != undefined) {

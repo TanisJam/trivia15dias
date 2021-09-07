@@ -1,4 +1,18 @@
-<div id="hexagons">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trivia Game</title>
+
+<script defer src="bundle.js"></script></head>
+
+<body id="game" class="d-flex flex-column justify-content-between"></div>
+    <!-- FONDO -->
+    <div id="hexagons">
   <svg viewBox="0 0 1379.9589 955.68878" xmlns="http://www.w3.org/2000/svg">
     <path d="m104,80-64.4156-.23995-32-55.90552 32.4156-55.66557 64.4156.23995 32,55.90552-32.4156,55.66557z"
       fill="none" stroke="#84c5d1" stroke-linecap="round" stroke-width="1.5" transform="translate(89.3561,145.58269)"
@@ -221,3 +235,92 @@
       class="hexagon" />
   </svg>
 </div>
+
+    <div id="main" class="container text-center">
+        <div id="area-pregunta">
+
+            <!-- <div class="loader"></div> -->
+            <svg width="150" height="150" viewBox="-0.1 -0.1 1.2 1.2">
+    <path class="hexagon background" d="M0.4625 0.01165063509
+                 a0.075 0.075 0 0 1 0.075 0
+                 l0.3666729559 0.2116987298
+                 a0.075 0.075 0 0 1 0.0375 0.06495190528
+                 l0 0.4233974596
+                 a0.075 0.075 0 0 1 -0.0375 0.06495190528
+                 l-0.3666729559 0.2116987298
+                 a0.075 0.075 0 0 1 -0.075 0
+                 l-0.3666729559 -0.2116987298
+                 a0.075 0.075 0 0 1 -0.0375 -0.06495190528
+                 l0 -0.4233974596
+                 a0.075 0.075 0 0 1 0.0375 -0.06495190528 Z" />
+    <path id="trace" class="hexagon trace" d="M0.4625 0.01165063509
+                 a0.075 0.075 0 0 1 0.075 0
+                 l0.3666729559 0.2116987298
+                 a0.075 0.075 0 0 1 0.0375 0.06495190528
+                 l0 0.4233974596
+                 a0.075 0.075 0 0 1 -0.0375 0.06495190528
+                 l-0.3666729559 0.2116987298
+                 a0.075 0.075 0 0 1 -0.075 0
+                 l-0.3666729559 -0.2116987298
+                 a0.075 0.075 0 0 1 -0.0375 -0.06495190528
+                 l0 -0.4233974596
+                 a0.075 0.075 0 0 1 0.0375 -0.06495190528 Z" />
+</svg>
+
+<h1>Cargando...</h1>
+
+        </div>
+
+        <div class="row pt-2 mx-auto">
+            <div class="col-2 d-flex flex-column justify-content-around align-items-center mx-auto"
+                id="seccion-random-izquierda">
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+            </div>
+            <div id="pista" class="col-6 m-auto text-center">
+                <img class="img-thumbnail">
+            </div>
+            <div class="col-2 d-flex flex-column justify-content-around align-items-center mx-auto"
+                id="seccion-random-derecha">
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+                <div class="img-random">
+                    <img class="img-fluid rounded"  alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="d-flex justify-content-around">
+                <div id="progreso-0" class="icono-pregunta"></div>
+                <div id="progreso-1" class="icono-pregunta"></div>
+                <div id="progreso-2" class="icono-pregunta"></div>
+                <div id="progreso-3" class="icono-pregunta"></div>
+                <div id="progreso-4" class="icono-pregunta"></div>
+                <div id="progreso-5" class="icono-pregunta"></div>
+                <div id="progreso-6" class="icono-pregunta"></div>
+                <div id="progreso-7" class="icono-pregunta"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -11,7 +11,7 @@ export default class Player {
     this.currentQuestion = obj.currentQuestion || false;
     this.level = obj.level || 0;
     this.progress = obj.progress || [];
-    this.medallas = {
+    this.medallas = obj.medallas || {
       bronce: 0,
       plata: 0,
       oro: 0,
@@ -89,6 +89,8 @@ export default class Player {
 
     this.level = 0;
     this.progress = [];
+    this.questions = false;
+    
     this.save();
     location = "./";
   }
