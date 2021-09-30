@@ -2,6 +2,11 @@
 
   Como parte del proyecto Evuca se nos asignó la tarea de crear un sitio web en el que aplicar los conocimientos adquiridos hasta el momento. Este resulta en un punto de inflexión deseado para fortalecer las bases de HTML, CSS y JavaScript.
   Para llevarlo a cabo se formaron grupos de 3 a 4 integrantes y se fijo un plazo máximo de entrega de 15 dias.
+  
+  ![trivia15dias](https://i.ibb.co/Nr1Ys3j/trivia.png)
+  
+  Live: [trivia15dias](https://trivia15dias.vercel.app/)
+  
 
 ### Requerimientos mínimos
 
@@ -31,19 +36,19 @@ Ademas se propuso implementar un sistema de pistas mediante imágenes obtenidas 
   - [x] Almacenar los datos recibidos en local storage.
   - [x] Permitir al usuario la modificación de los datos.
   - [x] Permitir la selección de opciones para el juego.
-- [ ] Completar sección del juego:
+- [x] Completar sección del juego:
   - [x] Diseño de la interfaz del juego.
   - [x] Solicitar y almacenar datos de Open Trivia Database.
   - [x] Tomar la pregunta normalizada y enviarla a Libre Translate y almacenar su respuesta.
-  - [ ] Realizar una petición de imágenes utilizando como palabra clave la respuesta correcta.
-  - [ ] Mostrar la imagen recibida de Unsplash cuando el usuario solicite una pista.
-  - [ ] Implementar un sistema de niveles u objetivo para el juego.
-- [ ] Completar sección sobre nosotros:
+  - [x] Realizar una petición de imágenes utilizando como palabra clave la respuesta correcta.
+  - [ ] ~~Mostrar la imagen recibida de Unsplash cuando el usuario solicite una pista.~~
+  - [x] Implementar un sistema de niveles u objetivo para el juego.
+- [x] Completar sección sobre nosotros:
 
-  - [ ] Diseño de la sección con información sobre el sitio y sus autores.
-  - [ ] Integrar un formulario de contacto.
-  - [ ] Implementar un sistema que verifique que los datos introducidos sean correctos.
-  - [ ] Notificar al usuario si el formulario a sido enviado correctamente o presenta errores.
+  - [x] Diseño de la sección con información sobre el sitio y sus autores.
+  - [x] Integrar un formulario de contacto.
+  - [x] Implementar un sistema que verifique que los datos introducidos sean correctos.
+  - [x] Notificar al usuario si el formulario a sido enviado correctamente o presenta errores.
 
 - [ ] Extra:
   - [ ] Adversarios a vencer (API del FBI)
